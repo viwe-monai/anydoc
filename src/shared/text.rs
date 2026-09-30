@@ -75,5 +75,7 @@ mod tests {
         assert_eq!(clean_text("de\u{fb02}ect"), "deflect");
         assert_eq!(clean_text("di\u{fb03}cult"), "difficult");
         assert_eq!(clean_text("waf\u{fb04}e"), "waffle");
+        assert_eq!(clean_text("fa\u{fb05}"), "fast");
+        assert_eq!(clean_text("ju\u{fb06}"), "just");
     }
 }
